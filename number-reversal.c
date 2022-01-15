@@ -4,12 +4,12 @@
 
 int main (void)
 {
-    int i, j;
+    int i, j, k;
 
     printf("Enter a two digit number: ");
-    scanf("%1d%1d", &i, &j);
+    scanf("%1d%1d%1d", &i, &j, &k);
 
-    printf("The reversal is: %d%d", j, i);
+    printf("The reversal is: %d%d%d", k, j, i);
 
     return 0;
 }
