@@ -3,12 +3,19 @@
 #include <stdio.h>
 
 int main (void) {
-    int i, j, k;
+    int n;
 
-    printf("Enter a three digit number: ");
-    scanf("%1d%1d%1d", &i, &j, &k);
+    printf("Enter a number: ");
+    scanf("%d", &n);
 
-    printf("The reversal is: %d%d%d", k, j, i);
+    printf("Digits reversed: ");
+
+    do {
+        printf("%d", n % 10);
+        n /= 10;
+    } while (n != 0);
+
+    printf("\n");
 
     return 0;
 }
